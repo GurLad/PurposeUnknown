@@ -13,9 +13,13 @@ public class InteractableUI : MonoBehaviour
     {
         Instance = this;
     }
+    private void Start()
+    {
+        EnableButtons();
+    }
     public void EnableButtons()
     {
-        if (Game.EnemyAttack == null)
+        if (Game.EnemyAttack == null || Game.PlayerAttacks.Contains(Game.EnemyAttack))
         {
             ScanButton.interactable = false;
         }
@@ -30,6 +34,17 @@ public class InteractableUI : MonoBehaviour
         else
         {
             AttackUI.SetActive(true);
+            foreach (AttackButton item in AttackUI.GetComponentsInChildren<AttackButton>())
+            {
+                if (item.TheAttack.EnergyCost <= Game.Player.Energy)
+                {
+                    item.gameObject.GetComponent<Button>().interactable = true;
+                }
+                else
+                {
+                    item.gameObject.GetComponent<Button>().interactable = false;
+                }
+            }
         }
     }
 }

@@ -6,12 +6,14 @@ using static GameController;
 
 public class DisplayAttacks : MonoBehaviour
 {
+    public static DisplayAttacks Instance { get; private set; }
     public Button Base;
     private void Start()
     {
-        Display(new List<string>(new string[] { "Laser gun", "Fireball" }));
+        Instance = this;
+        Display();
     }
-    private void Display(List<string> attackNames)
+    public void Display()
     {
         for (int i = 0; i < Game.PlayerAttacks.Count; i++)
         {

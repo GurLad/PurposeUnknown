@@ -27,9 +27,13 @@ public class Attack
     }
     public void DealDamage()
     {
-        if (UnityEngine.Random.Range(0, 1) <= Accuracy / 100.0f)
+        if (UnityEngine.Random.Range(0f, 1f) <= Accuracy / 100.0f)
         {
             defender.Health -= Power + attacker.Power - defender.Defense;
+        }
+        else
+        {
+            defender.Missed.Show();
         }
     }
 }

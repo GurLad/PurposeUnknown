@@ -15,4 +15,6 @@ public class BattleStats : MonoBehaviour
     public List<string> Attacks;
     public GameObject Body;
     public AdvancedAnimation IdleAnimation;
+    public AdvancedAnimation ScanAnimation;
+    public MissedMessage Missed;
 }

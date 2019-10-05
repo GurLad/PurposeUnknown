@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using static GameController;
-public enum WaitMode { None, WaitForFinishTool, WaitForFinishPlayerAttack, WaitForFinishWithdrawingTool, WaitForEnemyAttack}
 public class AttackButton : MonoBehaviour
 {
     public Text TheText;
