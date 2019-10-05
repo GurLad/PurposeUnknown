@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 165935623}
   - component: {fileID: 165935622}
   m_Layer: 5
-  m_Name: Attack
+  m_Name: Wait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1623,8 +1623,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cf3ad15fa0b042439740164c53f4d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 1260972041}
-  Enemy: {fileID: 1610013900168955271}
   TheText: {fileID: 1500632762}
   TheAttack:
     Name: 
@@ -3523,7 +3521,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Attack
+  m_Text: Wait
 --- !u!222 &1163781049
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3613,6 +3611,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d15fe91562e69e340a4ec00269122c16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackUI: {fileID: 1358451419}
+  ScanButton: {fileID: 1478993333}
 --- !u!1 &1358451419
 GameObject:
   m_ObjectHideFlags: 0
@@ -5129,6 +5129,68 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b6ec207b35bf9d4fba426c079b391f7, type: 3}
+--- !u!1 &1903552376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1903552378}
+  - component: {fileID: 1903552377}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1903552377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903552376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c27cfeb75bc684eb3aa998bfc732e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 1260972041}
+  Enemy: {fileID: 1610013900168955271}
+  PlayerAttacks: []
+  EnemyAttacks: []
+  PlayerAttack:
+    Name: 
+    ToolAnimation: {fileID: 0}
+    AttackAnimation: {fileID: 0}
+    Power: 0
+    Accuracy: 0
+    EnergyCost: 0
+  EnemyAttack:
+    Name: 
+    ToolAnimation: {fileID: 0}
+    AttackAnimation: {fileID: 0}
+    Power: 0
+    Accuracy: 0
+    EnergyCost: 0
+  TheWaitMode: 0
+--- !u!4 &1903552378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903552376}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1916251279
 GameObject:
   m_ObjectHideFlags: 0
