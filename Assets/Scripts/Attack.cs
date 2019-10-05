@@ -19,13 +19,14 @@ public class Attack
         CurrentAttack = this;
         this.attacker = attacker;
         this.defender = defender;
+        attacker.IdleAnimation.Active = false;
+        attacker.Energy -= EnergyCost;
         AttackAnimation.Main = attacker.gameObject;
         AttackAnimation.Start();
         AttackAnimation.StartAnimations();
     }
     public void DealDamage()
     {
-        attacker.Energy -= EnergyCost;
         if (UnityEngine.Random.Range(0, 1) <= Accuracy / 100.0f)
         {
             defender.Health -= Power + attacker.Power - defender.Defense;

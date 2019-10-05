@@ -14,4 +14,5 @@ public class BattleStats : MonoBehaviour
     public int Defense;
     public List<string> Attacks;
     public GameObject Body;
+    public AdvancedAnimation IdleAnimation;
 }
