@@ -25,6 +25,7 @@ public class AdvancedAnimation : MonoBehaviour
     public bool ImmidiateReturn = false;
     public bool AffectAll = false;
     public bool AffectPosition = false;
+    public bool AffectScale = false;
     public bool AffectMain = false;
     public bool AffectActive = false;
     public bool OneWay;
@@ -57,7 +58,7 @@ public class AdvancedAnimation : MonoBehaviour
         AdvancedAnimationListeners = new List<IAdvancedAnimationListener>();
     }
     // Gets all parts and sets pointers
-    void Start()
+    public void Start()
     {
         if (Main == null)
         {
@@ -149,6 +150,15 @@ public class AdvancedAnimation : MonoBehaviour
                     if (BaseValue2 != FinalValue2 || AffectAll)
                     {
                         Parts[i].localPosition = new Vector3(BaseValue2.x * (1 - Count) + FinalValue2.x * Count, BaseValue2.y * (1 - Count) + FinalValue2.y * Count, BaseValue2.z * (1 - Count) + FinalValue2.z * Count);
+                    }
+                }
+                if (AffectScale)
+                {
+                    Vector3 BaseValue2 = AnimationParts[PreviousStep][Pointers[PreviousStep][i]].localScale;
+                    Vector3 FinalValue2 = AnimationParts[NextStep][Pointers[NextStep][i]].localScale;
+                    if (BaseValue2 != FinalValue2 || AffectAll)
+                    {
+                        Parts[i].localScale = new Vector3(BaseValue2.x * (1 - Count) + FinalValue2.x * Count, BaseValue2.y * (1 - Count) + FinalValue2.y * Count, BaseValue2.z * (1 - Count) + FinalValue2.z * Count);
                     }
                 }
             }
