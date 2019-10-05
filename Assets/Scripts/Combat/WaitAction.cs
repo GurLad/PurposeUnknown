@@ -9,6 +9,7 @@ public class WaitAction : MonoBehaviour
     public void ActivateWait()
     {
         Game.TheWaitMode = WaitMode.None;
+        Game.Player.Missed.Show("Waited");
         Game.StartPlayerTurn();
         Game.Player.Energy += EnergyValue;
         Game.EndPlayerTurn();

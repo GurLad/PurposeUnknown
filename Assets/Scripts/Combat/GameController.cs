@@ -114,6 +114,7 @@ public class GameController : MonoBehaviour
         else
         {
             Enemy.Energy += 5;
+            Game.Enemy.Missed.Show("Waited");
             EndEnemyTurn();
         }
     }

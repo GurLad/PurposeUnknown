@@ -11,9 +11,10 @@ public class MissedMessage : MonoBehaviour
     {
         textMesh = GetComponent<TextMesh>();
     }
-    public void Show()
+    public void Show(string message = "Missed")
     {
         count = 1;
+        textMesh.text = message;
     }
     private void Update()
     {
