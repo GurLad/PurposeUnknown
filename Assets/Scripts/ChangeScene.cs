@@ -7,6 +7,7 @@ public class ChangeScene : MonoBehaviour
 {
     public string Target;
     public bool ResetPlayerPos = false;
+    public bool IsIntro;
     public void Click()
     {
         if (ResetPlayerPos)
@@ -14,6 +15,13 @@ public class ChangeScene : MonoBehaviour
             PlayerPrefs.SetFloat("PlayerXPos", -4);
             PlayerPrefs.SetFloat("PlayerZPos", 4);
         }
-        SceneManager.LoadScene(Target);
+        if (IsIntro && PlayerPrefs.GetInt("GotScanner", 0) != 1)
+        {
+            SceneManager.LoadScene("Intro");
+        }
+        else
+        {
+            SceneManager.LoadScene(Target);
+        }
     }
 }
