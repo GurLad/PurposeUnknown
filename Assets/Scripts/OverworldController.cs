@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OverworldController : MonoBehaviour
 {
@@ -21,6 +22,12 @@ public class OverworldController : MonoBehaviour
     }
     private void Update()
     {
+        if (Input.GetButtonUp("Cancel"))
+        {
+            PlayerPrefs.SetFloat("PlayerXPos", transform.position.x);
+            PlayerPrefs.SetFloat("PlayerZPos", transform.position.z);
+            SceneManager.LoadScene("Menu");
+        }
         Vector3 newSpeed = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * Speed;
         if (newSpeed.magnitude >= 0.1f)
         {
