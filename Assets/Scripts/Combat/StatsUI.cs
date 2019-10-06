@@ -17,6 +17,15 @@ public class StatsUI : MonoBehaviour
     }
     private void ShowStats()
     {
+        //Stats logic
+        if (Stats.Health > Stats.MaxHealth)
+        {
+            Stats.Health = Stats.MaxHealth;
+        }
+        if (Stats.Energy > Stats.MaxEnergy)
+        {
+            Stats.Energy = Stats.MaxEnergy;
+        }
         Name.text = Stats.Name;
         Health.text = "HP:\t\t" + Stats.Health + (Stats.Health < 100 ? "\t/" : "/" ) + Stats.MaxHealth;
         Energy.text = "Energy:\t" + Stats.Energy + (Stats.Energy < 100 ? "\t/" : "/") + Stats.MaxEnergy;

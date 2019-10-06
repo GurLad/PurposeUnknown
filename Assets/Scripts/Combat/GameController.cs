@@ -37,6 +37,19 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         Game = this;
+        //Load enemy and player from prefs
+        Enemy.FromString(PlayerPrefs.GetString("EnemyStats"));
+        if (!PlayerPrefs.HasKey("PlayerStats"))
+        {
+            //Init stats
+            Player.Name = "M43 (you)";
+            Player.MaxHealth = 10;
+            Player.MaxEnergy = 10;
+            Player.Power = 2;
+            Player.Defense = 2;
+            PlayerPrefs.SetString("PlayerStats", Player.ToString());
+        }
+        Player.FromString(PlayerPrefs.GetString("PlayerStats"));
     }
     private void Start()
     {

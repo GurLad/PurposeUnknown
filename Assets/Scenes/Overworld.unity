@@ -775,27 +775,13 @@ GameObject:
   - component: {fileID: 400368506}
   - component: {fileID: 400368505}
   - component: {fileID: 400368504}
-  - component: {fileID: 400368503}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: RobotEnemy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &400368503
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400368502}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &400368504
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -803,7 +789,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400368502}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -852,7 +838,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 14.6, y: 2, z: 4.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 671909105}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -943,7 +930,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602319122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -55.7, y: 2, z: 20.7}
+  m_LocalPosition: {x: 3.7, y: 2, z: -19.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -965,6 +952,157 @@ MonoBehaviour:
 
     "M43, if you see this message, then I''m dead. I didn''t have enough time to program
     your mission, but know this: you are humanity''s only hope. Please save us."'
+--- !u!1001 &671909104
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 400368506}
+    m_Modifications:
+    - target: {fileID: 1068098760656650751, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: m_Name
+      value: RobotModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036939404004130994, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036939404004130994, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036939404004130994, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036939404004130994, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036939404004130994, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036939404004130994, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036939404004130994, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036939404004130994, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036939404004130994, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036939404004130994, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036939404004130994, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: Attacks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: Name
+      value: X42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: MaxHealth
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: MaxEnergy
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: Power
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: Defense
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: Attacks.Array.data[0]
+      value: Fireball
+      objectReference: {fileID: 0}
+    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
+--- !u!4 &671909105 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5036939404004130994, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+    type: 3}
+  m_PrefabInstance: {fileID: 671909104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &671909106 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7660868096140134678, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+    type: 3}
+  m_PrefabInstance: {fileID: 671909104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &671909107 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3802032456776879575, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+    type: 3}
+  m_PrefabInstance: {fileID: 671909104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &671909108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671909107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a627b9ec6b85bf4f9ffd529e9af115b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stats: {fileID: 671909109}
+--- !u!114 &671909109 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+    type: 3}
+  m_PrefabInstance: {fileID: 671909104}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 950d40763bbf91c44a8a3f4f74e70e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1992,9 +2130,7 @@ MonoBehaviour:
 
     "Scan enemies after they attack to learn that attack. Use this skill to win
 
-    the War for us."
-
-    You have no idea who "us" is.'
+    the War for us."'
 --- !u!1 &1619000960
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,7 +2332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.7511432, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.91764706, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2524,6 +2660,75 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Message: "Message from X79-2453:\r\n\"Humans got M43. Hid in forest. No sign of
     it yet. Supreme AI requests immediate action. Need M43 to complete.\"\r"
+--- !u!1001 &1838064894
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 671909106}
+    m_Modifications:
+    - target: {fileID: 3491755308098480763, guid: 5b6ec207b35bf9d4fba426c079b391f7,
+        type: 3}
+      propertyPath: m_Name
+      value: HeadGun
+      objectReference: {fileID: 0}
+    - target: {fileID: 445413445452273768, guid: 5b6ec207b35bf9d4fba426c079b391f7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 445413445452273768, guid: 5b6ec207b35bf9d4fba426c079b391f7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 445413445452273768, guid: 5b6ec207b35bf9d4fba426c079b391f7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.686
+      objectReference: {fileID: 0}
+    - target: {fileID: 445413445452273768, guid: 5b6ec207b35bf9d4fba426c079b391f7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 445413445452273768, guid: 5b6ec207b35bf9d4fba426c079b391f7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 445413445452273768, guid: 5b6ec207b35bf9d4fba426c079b391f7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 445413445452273768, guid: 5b6ec207b35bf9d4fba426c079b391f7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 445413445452273768, guid: 5b6ec207b35bf9d4fba426c079b391f7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 445413445452273768, guid: 5b6ec207b35bf9d4fba426c079b391f7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 445413445452273768, guid: 5b6ec207b35bf9d4fba426c079b391f7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 445413445452273768, guid: 5b6ec207b35bf9d4fba426c079b391f7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5b6ec207b35bf9d4fba426c079b391f7, type: 3}
 --- !u!1 &1841687917 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7739319023171088710, guid: f8851d60b9aff5e4881a78b32abf3164,
@@ -2689,7 +2894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.94317794, b: 1, a: 0.392}
+  m_Color: {r: 0, g: 0.91764706, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

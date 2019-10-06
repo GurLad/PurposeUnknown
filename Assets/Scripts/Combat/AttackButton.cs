@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using static GameController;
-public class AttackButton : MonoBehaviour
+public class AttackButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public Text TheText;
     public Attack TheAttack;
@@ -14,5 +15,15 @@ public class AttackButton : MonoBehaviour
         Game.PlayerAttack = TheAttack;
         Game.PlayerAttack.ToolAnimation.StartAnimations();
         Game.TheWaitMode = WaitMode.WaitForFinishTool;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        AttackDisplay.Instance.ShowInfo(TheAttack);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        AttackDisplay.Instance.Hide();
     }
 }
