@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class OverworldEnemy : MonoBehaviour
 {
     public BattleStats Stats;
+    public string WeaponName;
     private string id;
     private void Awake()
     {
@@ -24,6 +25,7 @@ public class OverworldEnemy : MonoBehaviour
     {
         PlayerPrefs.SetString("EnemyStats", Stats.ToString());
         PlayerPrefs.SetString("EnemyID", id);
+        PlayerPrefs.SetString("EnemyWeapon", WeaponName);
         PlayerPrefs.SetFloat("PlayerXPos", OverworldController.Instance.transform.position.x);
         PlayerPrefs.SetFloat("PlayerZPos", OverworldController.Instance.transform.position.z);
         SceneManager.LoadScene("Battle");

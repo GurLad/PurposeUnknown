@@ -7,12 +7,13 @@ public class MoveProjectile : MonoBehaviour
     public float Speed = 10;
     public bool DealDamage = true;
     public GameObject Particle;
+    public bool UseDirection;
     private bool missed;
     private float count = 3;
     private void Start()
     {
         Speed *= -Mathf.Sign(transform.position.x);
-        GetComponent<Rigidbody>().velocity = new Vector3(Speed, 0, 0);
+        GetComponent<Rigidbody>().velocity = Speed * (!UseDirection ? Vector3.right : transform.right);
     }
     private void OnTriggerEnter(Collider other)
     {
