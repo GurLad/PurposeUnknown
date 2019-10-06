@@ -2981,6 +2981,18 @@ MonoBehaviour:
     Power: 1
     Accuracy: 100
     EnergyCost: 1
+  - Name: Zap
+    ToolAnimation: {fileID: 741841628}
+    AttackAnimation: {fileID: 0}
+    Power: 2
+    Accuracy: 95
+    EnergyCost: 2
+  - Name: Discharge
+    ToolAnimation: {fileID: 741841628}
+    AttackAnimation: {fileID: 0}
+    Power: 5
+    Accuracy: 45
+    EnergyCost: 3
 --- !u!4 &456037132
 Transform:
   m_ObjectHideFlags: 0

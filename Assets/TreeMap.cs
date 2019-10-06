@@ -20,7 +20,7 @@ public class TreeMap : MonoBehaviour
             {
                 if (column[j] != '0')
                 {
-                    Instantiate(Tree, new Vector3((-size / 2 + j) * TileSize, Tree.transform.position.y, (size / 2 - i) * TileSize), Quaternion.identity);
+                    Instantiate(Tree, new Vector3((-size / 2 + j) * TileSize, Tree.transform.position.y, (size / 2 - i) * TileSize), Quaternion.identity).SetActive(true);
                 }
             }
         }
