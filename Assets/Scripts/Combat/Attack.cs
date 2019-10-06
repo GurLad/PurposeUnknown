@@ -30,13 +30,22 @@ public class Attack
     {
         if (UnityEngine.Random.Range(0f, 1f) <= Accuracy / 100.0f)
         {
-            defender.Health -= Power + attacker.Power - defender.Defense;
-            if (defender.Health <= 0)
+            int damage = Power + attacker.Power - defender.Defense;
+            if (damage > 0)
             {
-                Game.TheWaitMode = WaitMode.None;
-                Game.Explode(defender);
+                defender.Health -= damage;
+                if (defender.Health <= 0)
+                {
+                    Game.TheWaitMode = WaitMode.None;
+                    Game.Explode(defender);
+                }
+                return true;
             }
-            return true;
+            else
+            {
+                defender.Missed.Show("Blocked");
+                return true;
+            }
         }
         else
         {

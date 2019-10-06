@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveProjectile : MonoBehaviour
 {
     public float Speed = 10;
-    public bool DealDamage;
+    public bool DealDamage = true;
     public GameObject Particle;
     private bool missed;
     private float count = 3;
@@ -16,7 +16,7 @@ public class MoveProjectile : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (!missed)
+        if (DealDamage && !missed)
         {
             if (Attack.CurrentAttack != null)
             {

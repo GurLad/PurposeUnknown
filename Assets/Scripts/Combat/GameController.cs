@@ -175,7 +175,8 @@ public class GameController : MonoBehaviour
             PlayerPrefs.SetInt("Kills", PlayerPrefs.GetInt("Kills", 0) + 1);
             if (PlayerPrefs.GetInt("Kills") >= 3)
             {
-                Player.Missed.Show("Leveled up");
+                PlayerPrefs.SetInt("Kills", 0);
+                Player.Missed.Show("Level up");
                 PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level", 0) + 1);
                 Player.MaxHealth += 2;
                 Player.MaxEnergy += 2;

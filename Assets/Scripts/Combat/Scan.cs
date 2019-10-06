@@ -9,6 +9,7 @@ public class Scan : MonoBehaviour
         Game.StartPlayerTurn();
         Game.Player.IdleAnimation.Active = false;
         Game.PlayerAttacks.Add(Game.EnemyAttack);
+        Game.Player.Attacks.Add(Game.EnemyAttack.Name);
         //Write to PlayerPrefs
         Game.Player.ScanAnimation.StartAnimations();
         Game.TheWaitMode = WaitMode.WaitForFinishScan;
