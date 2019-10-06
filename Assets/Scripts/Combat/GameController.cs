@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     public static GameController Game;
     public BattleStats Player;
     public BattleStats Enemy;
+    public BattleStats HumanEnemy;
     public GameObject Boom;
     public float DeathDelay = 1;
     [HideInInspector]
@@ -37,10 +38,25 @@ public class GameController : MonoBehaviour
     public Attack EnemyAttack;
     [HideInInspector]
     public WaitMode TheWaitMode = WaitMode.None;
+    public bool IsHuman;
     private float count = Mathf.NegativeInfinity;
     private void Awake()
     {
         Game = this;
+        //Check if enemy is human
+        if (PlayerPrefs.GetInt("IsHuman", 1) == 1)
+        {
+            Enemy.gameObject.SetActive(false);
+            HumanEnemy.FromString(PlayerPrefs.GetString("EnemyStats"));
+            Enemy = HumanEnemy;
+            IsHuman = true;
+            PlayerPrefs.SetInt("Music", 3);
+        }
+        else
+        {
+            HumanEnemy.gameObject.SetActive(false);
+            PlayerPrefs.SetInt("Music", 1);
+        }
         //Load enemy and player from prefs
         Enemy.FromString(PlayerPrefs.GetString("EnemyStats"));
         if (!PlayerPrefs.HasKey("PlayerStats"))
@@ -98,7 +114,7 @@ public class GameController : MonoBehaviour
                 }
                 break;
             case WaitMode.WaitForEnemyAttack:
-                if (!EnemyAttack.AttackAnimation.Active)
+                if ((!IsHuman && !EnemyAttack.AttackAnimation.Active) || (IsHuman && !EnemyAttack.HumanAnimation.Active))
                 {
                     EndEnemyTurn();
                 }

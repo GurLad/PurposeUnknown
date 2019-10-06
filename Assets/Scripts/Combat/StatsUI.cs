@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static GameController;
 
 public class StatsUI : MonoBehaviour
 {
@@ -11,6 +12,13 @@ public class StatsUI : MonoBehaviour
     public Text Energy;
     public Text Power;
     public Text Defense;
+    private void Start()
+    {
+        if (!Stats.IsPlayer)
+        {
+            Stats = Game.Enemy;
+        }
+    }
     private void Update()
     {
         ShowStats();

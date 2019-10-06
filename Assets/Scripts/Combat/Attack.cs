@@ -10,6 +10,7 @@ public class Attack
     public string Name;
     public AdvancedAnimation ToolAnimation;
     public AdvancedAnimation AttackAnimation;
+    public AdvancedAnimation HumanAnimation;
     public int Power;
     public int Accuracy;
     public int EnergyCost;
@@ -22,9 +23,18 @@ public class Attack
         this.defender = defender;
         attacker.IdleAnimation.Active = false;
         attacker.Energy -= EnergyCost;
-        AttackAnimation.Main = attacker.gameObject;
-        AttackAnimation.Start();
-        AttackAnimation.StartAnimations();
+        if (!Game.IsHuman || attacker.IsPlayer)
+        {
+            AttackAnimation.Main = attacker.gameObject;
+            AttackAnimation.Start();
+            AttackAnimation.StartAnimations();
+        }
+        else
+        {
+            HumanAnimation.Main = attacker.gameObject;
+            HumanAnimation.Start();
+            HumanAnimation.StartAnimations();
+        }
     }
     public bool DealDamage()
     {

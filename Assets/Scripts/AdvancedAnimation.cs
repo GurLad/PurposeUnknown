@@ -64,7 +64,7 @@ public class AdvancedAnimation : MonoBehaviour
         {
             if (FindMainByName == "")
             {
-                throw new System.Exception("You need something to animate (assign the Main variable or use FindMainByName).");
+                return;//throw new System.Exception("You need something to animate (assign the Main variable or use FindMainByName).");
             }
             else
             {
