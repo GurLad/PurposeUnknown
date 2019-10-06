@@ -15,7 +15,6 @@ public class OverworldEnemy : MonoBehaviour
             id = (int)item.position.x + "," + (int)item.position.z;
             item = item.parent;
         }
-        Debug.Log(id);
         if (PlayerPrefs.GetInt(id) == 1)
         {
             Destroy(gameObject);
@@ -25,6 +24,8 @@ public class OverworldEnemy : MonoBehaviour
     {
         PlayerPrefs.SetString("EnemyStats", Stats.ToString());
         PlayerPrefs.SetString("EnemyID", id);
+        PlayerPrefs.SetFloat("PlayerXPos", OverworldController.Instance.transform.position.x);
+        PlayerPrefs.SetFloat("PlayerZPos", OverworldController.Instance.transform.position.z);
         SceneManager.LoadScene("Battle");
     }
 }

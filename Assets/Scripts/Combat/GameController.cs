@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public enum WaitMode { None, WaitForFinishTool, WaitForFinishPlayerAttack, WaitForFinishWithdrawingTool, WaitForEnemyAttack, WaitForFinishScan }
 
@@ -10,6 +11,8 @@ public class GameController : MonoBehaviour
     public static GameController Game;
     public BattleStats Player;
     public BattleStats Enemy;
+    public GameObject Boom;
+    public float DeathDelay = 1;
     [HideInInspector]
     public List<Attack> PlayerAttacks;
     [HideInInspector]
@@ -34,6 +37,7 @@ public class GameController : MonoBehaviour
     public Attack EnemyAttack;
     [HideInInspector]
     public WaitMode TheWaitMode = WaitMode.None;
+    private float count = Mathf.NegativeInfinity;
     private void Awake()
     {
         Game = this;
@@ -63,6 +67,14 @@ public class GameController : MonoBehaviour
         switch (TheWaitMode)
         {
             case WaitMode.None:
+                if (count != Mathf.NegativeInfinity)
+                {
+                    count -= Time.deltaTime;
+                    if (count <= 0)
+                    {
+                        SceneManager.LoadScene("Overworld");
+                    }
+                }
                 break;
             case WaitMode.WaitForFinishTool:
                 if (!PlayerAttack.ToolAnimation.Active)
@@ -149,5 +161,31 @@ public class GameController : MonoBehaviour
         {
             EnemyAttack = null;
         }
+    }
+    public void Explode(BattleStats target)
+    {
+        if (target == Player)
+        {
+            PlayerPrefs.SetFloat("PlayerXPos", -4);
+            PlayerPrefs.SetFloat("PlayerZPos", 4);
+        }
+        else
+        {
+            PlayerPrefs.SetInt(PlayerPrefs.GetString("EnemyID"), 1);
+            PlayerPrefs.SetInt("Kills", PlayerPrefs.GetInt("Kills", 0) + 1);
+            if (PlayerPrefs.GetInt("Kills") >= 3)
+            {
+                Player.Missed.Show("Leveled up");
+                PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level", 0) + 1);
+                Player.MaxHealth += 2;
+                Player.MaxEnergy += 2;
+                Player.Power += 1;
+                Player.Defense += 1;
+            }
+            PlayerPrefs.SetString("PlayerStats", Player.ToString());
+        }
+        Instantiate(Boom, target.transform.position, Quaternion.identity).SetActive(true);
+        Destroy(target.gameObject);
+        count = DeathDelay;
     }
 }

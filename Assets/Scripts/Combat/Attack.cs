@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static GameController;
 [Serializable]
 public class Attack
 {
@@ -25,15 +26,22 @@ public class Attack
         AttackAnimation.Start();
         AttackAnimation.StartAnimations();
     }
-    public void DealDamage()
+    public bool DealDamage()
     {
         if (UnityEngine.Random.Range(0f, 1f) <= Accuracy / 100.0f)
         {
             defender.Health -= Power + attacker.Power - defender.Defense;
+            if (defender.Health <= 0)
+            {
+                Game.TheWaitMode = WaitMode.None;
+                Game.Explode(defender);
+            }
+            return true;
         }
         else
         {
             defender.Missed.Show();
+            return false;
         }
     }
 }

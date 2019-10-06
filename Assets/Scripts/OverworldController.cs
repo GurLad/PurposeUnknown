@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class OverworldController : MonoBehaviour
 {
+    public static OverworldController Instance;
     public float Speed;
     public GameObject Model;
     public AdvancedAnimation IdleAnimation;
     public AdvancedAnimation WalkAnimation;
     private Rigidbody rigidbody;
+    private void Awake()
+    {
+        Instance = this;
+    }
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
+        transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerXPos", -4), 0, PlayerPrefs.GetFloat("PlayerZPos", 4));
     }
     private void Update()
     {

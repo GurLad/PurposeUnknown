@@ -7,6 +7,8 @@ public class MoveProjectile : MonoBehaviour
     public float Speed = 10;
     public bool DealDamage;
     public GameObject Particle;
+    private bool missed;
+    private float count = 3;
     private void Start()
     {
         Speed *= -Mathf.Sign(transform.position.x);
@@ -14,14 +16,34 @@ public class MoveProjectile : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (Attack.CurrentAttack != null)
+        if (!missed)
         {
-            Attack.CurrentAttack.DealDamage();
-            if (Particle != null)
+            if (Attack.CurrentAttack != null)
             {
-                Instantiate(Particle, transform.position, Quaternion.identity).SetActive(true);
+                if (Attack.CurrentAttack.DealDamage())
+                {
+                    if (Particle != null)
+                    {
+                        Instantiate(Particle, transform.position, Quaternion.identity).SetActive(true);
+                    }
+                    Destroy(gameObject);
+                }
+                else
+                {
+                    missed = true;
+                }
             }
-            Destroy(gameObject);
+        }
+    }
+    private void Update()
+    {
+        if (missed)
+        {
+            count -= Time.deltaTime;
+            if (count <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
