@@ -108,7 +108,7 @@ public class GameController : MonoBehaviour
                 {
                     foreach (AttackButton item in InteractableUI.Instance.AttackUI.GetComponentsInChildren<AttackButton>())
                     {
-                        Destroy(item);
+                        Destroy(item.gameObject);
                     }
                     DisplayAttacks.Instance.Display();
                     EndPlayerTurn();
@@ -155,7 +155,15 @@ public class GameController : MonoBehaviour
         //A very complicated and smart enemy AI
         if (EnemyAvailableAttacks.Count > 0)
         {
-            EnemyAttack = EnemyAvailableAttacks[Random.Range(0, Enemy.Attacks.Count)];
+            //EnemyAttack = EnemyAvailableAttacks[Random.Range(0, Enemy.Attacks.Count)];
+            List<Attack> attacks = EnemyAvailableAttacks;
+            attacks.Sort(delegate (Attack x, Attack y)
+            {
+                return (int)Mathf.Sign(y.EnergyCost - x.EnergyCost);
+            });
+            Debug.Log(attacks[0].Name);
+            List<Attack> bestAttacks = attacks.FindAll(a => a.EnergyCost >= attacks[0].EnergyCost);
+            EnemyAttack = bestAttacks[Random.Range(0, bestAttacks.Count)];
         }
         else
         {

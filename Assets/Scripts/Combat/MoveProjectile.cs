@@ -12,8 +12,7 @@ public class MoveProjectile : MonoBehaviour
     private float count = 3;
     private void Start()
     {
-        Speed *= -Mathf.Sign(transform.position.x);
-        GetComponent<Rigidbody>().velocity = Speed * (!UseDirection ? Vector3.right : transform.right);
+        GetComponent<Rigidbody>().velocity = Speed * (!UseDirection ? (Vector3.right * -Mathf.Sign(transform.position.x)) : new Vector3(transform.right.x * -Mathf.Sign(transform.position.x), transform.right.y, transform.right.z));
     }
     private void OnTriggerEnter(Collider other)
     {
