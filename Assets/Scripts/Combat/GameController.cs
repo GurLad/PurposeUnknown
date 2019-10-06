@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
     public BattleStats Enemy;
     public BattleStats HumanEnemy;
     public GameObject Boom;
+    public Color BossColor;
     public float DeathDelay = 1;
     [HideInInspector]
     public List<Attack> PlayerAttacks;
@@ -38,6 +39,7 @@ public class GameController : MonoBehaviour
     public Attack EnemyAttack;
     [HideInInspector]
     public WaitMode TheWaitMode = WaitMode.None;
+    [HideInInspector]
     public bool IsHuman;
     private float count = Mathf.NegativeInfinity;
     private void Awake()
@@ -50,12 +52,23 @@ public class GameController : MonoBehaviour
             HumanEnemy.FromString(PlayerPrefs.GetString("EnemyStats"));
             Enemy = HumanEnemy;
             IsHuman = true;
-            PlayerPrefs.SetInt("Music", 3);
+            PlayerPrefs.SetInt("Music", 3 + PlayerPrefs.GetInt("IsBoss", 0));
         }
         else
         {
             HumanEnemy.gameObject.SetActive(false);
-            PlayerPrefs.SetInt("Music", 1);
+            PlayerPrefs.SetInt("Music", 1 + PlayerPrefs.GetInt("IsBoss", 0));
+        }
+        if (PlayerPrefs.GetInt("IsBoss", 0) == 1)
+        {
+            Color target = Enemy.Body.GetComponent<Renderer>().materials[0].color;
+            foreach (var item in Enemy.Body.GetComponentsInChildren<Renderer>(true))
+            {
+                if (item.materials[0].color == target)
+                {
+                    item.materials[0].color = BossColor;
+                }
+            }
         }
         //Load enemy and player from prefs
         Enemy.FromString(PlayerPrefs.GetString("EnemyStats"));
@@ -88,7 +101,21 @@ public class GameController : MonoBehaviour
                     count -= Time.deltaTime;
                     if (count <= 0)
                     {
-                        SceneManager.LoadScene("Overworld");
+                        if (PlayerPrefs.GetInt("IsBoss", 0) == 0)
+                        {
+                            SceneManager.LoadScene("Overworld");
+                        }
+                        else
+                        {
+                            if (IsHuman)
+                            {
+                                SceneManager.LoadScene("TerminatorWin");
+                            }
+                            else
+                            {
+                                SceneManager.LoadScene("RebelWin");
+                            }
+                        }
                     }
                 }
                 break;
@@ -193,7 +220,7 @@ public class GameController : MonoBehaviour
             PlayerPrefs.SetFloat("PlayerXPos", -4);
             PlayerPrefs.SetFloat("PlayerZPos", 4);
         }
-        else
+        else if (PlayerPrefs.GetInt("IsBoss", 0) == 0)
         {
             PlayerPrefs.SetInt(PlayerPrefs.GetString("EnemyID"), 1);
             PlayerPrefs.SetInt("Kills", PlayerPrefs.GetInt("Kills", 0) + 1);

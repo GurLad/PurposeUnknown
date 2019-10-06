@@ -34,7 +34,7 @@ public class InteractableUI : MonoBehaviour
         else
         {
             AttackUI.SetActive(true);
-            foreach (AttackButton item in AttackUI.GetComponentsInChildren<AttackButton>())
+            foreach (AttackButton item in AttackUI.GetComponentsInChildren<AttackButton>(true))
             {
                 if (item.TheAttack.EnergyCost <= Game.Player.Energy)
                 {

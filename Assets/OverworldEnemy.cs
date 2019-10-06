@@ -8,6 +8,7 @@ public class OverworldEnemy : MonoBehaviour
     public BattleStats Stats;
     public string WeaponName;
     public bool IsHuman;
+    public bool IsBoss;
     private string id;
     private void Awake()
     {
@@ -29,6 +30,7 @@ public class OverworldEnemy : MonoBehaviour
         {
             Debug.Log("Collided with " + id + ", is " + PlayerPrefs.GetInt(id) + " completed");
             PlayerPrefs.SetInt("IsHuman", IsHuman ? 1 : 0);
+            PlayerPrefs.SetInt("IsBoss", IsBoss ? 1 : 0);
             PlayerPrefs.SetString("EnemyStats", Stats.ToString());
             PlayerPrefs.SetString("EnemyID", id);
             PlayerPrefs.SetString("EnemyWeapon", WeaponName);
