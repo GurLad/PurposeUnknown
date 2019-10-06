@@ -291,7 +291,7 @@ Transform:
   m_Children:
   - {fileID: 1193779812}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &84183660
 GameObject:
@@ -384,7 +384,7 @@ Transform:
   m_Children:
   - {fileID: 946530156}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &95374822
 GameObject:
@@ -477,7 +477,7 @@ Transform:
   m_Children:
   - {fileID: 238210438}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &102782480
 PrefabInstance:
@@ -639,7 +639,7 @@ Transform:
   m_Children:
   - {fileID: 471205627}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &201129005
 PrefabInstance:
@@ -845,8 +845,100 @@ Transform:
   m_Children:
   - {fileID: 2015395655}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &218622342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 218622345}
+  - component: {fileID: 218622344}
+  - component: {fileID: 218622343}
+  m_Layer: 0
+  m_Name: New Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!102 &218622343
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218622342}
+  m_Text: hello
+  m_OffsetZ: 0
+  m_CharacterSize: 0.1
+  m_LineSpacing: 1
+  m_Anchor: 4
+  m_Alignment: 1
+  m_TabSize: 4
+  m_FontSize: 157
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 12800000, guid: ab09ddb626c399943b3d46852d8cf2dc, type: 3}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190080
+--- !u!23 &218622344
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218622342}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ab09ddb626c399943b3d46852d8cf2dc, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!4 &218622345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218622342}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!4 &223413654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5036939404004130994, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
@@ -1053,6 +1145,19 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 1
   IsBoss: 0
+--- !u!114 &238210446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238210439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!4 &239195981 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3696957777079219583, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
@@ -1093,6 +1198,19 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 1
   IsBoss: 0
+--- !u!114 &259344243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259344237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1 &259630054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,6 +1481,19 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 0
   IsBoss: 0
+--- !u!114 &280928470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280928467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1001 &286516998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1546,7 +1677,7 @@ Transform:
   m_Children:
   - {fileID: 1224624021}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &359625847
 PrefabInstance:
@@ -1736,6 +1867,19 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 1
   IsBoss: 0
+--- !u!114 &359625856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359625849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1 &400368502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,7 +1957,7 @@ Transform:
   m_Children:
   - {fileID: 671909105}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &416786788
 PrefabInstance:
@@ -1979,6 +2123,19 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 0
   IsBoss: 0
+--- !u!114 &416786794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416786791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1001 &441506623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2133,6 +2290,19 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 0
   IsBoss: 0
+--- !u!114 &441506629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441506626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1001 &471205626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2297,6 +2467,19 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 0
   IsBoss: 0
+--- !u!114 &471205632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471205629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1 &602319122
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,7 +2573,7 @@ Transform:
   m_Children:
   - {fileID: 1269768009}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &602319127
 MonoBehaviour:
@@ -2719,6 +2902,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 950d40763bbf91c44a8a3f4f74e70e42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &671909110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671909107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2991,7 +3187,7 @@ Transform:
   m_Children:
   - {fileID: 829417950}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &829417949
 PrefabInstance:
@@ -3230,6 +3426,19 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 1
   IsBoss: 1
+--- !u!114 &829417958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829417951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1001 &831495371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3665,6 +3874,19 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 1
   IsBoss: 0
+--- !u!114 &946530164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946530157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1 &976421681
 GameObject:
   m_ObjectHideFlags: 0
@@ -3981,7 +4203,7 @@ Transform:
   m_Children:
   - {fileID: 359625848}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1193779811
 PrefabInstance:
@@ -4197,6 +4419,19 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 0
   IsBoss: 1
+--- !u!114 &1193779817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193779814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1001 &1224624020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4356,6 +4591,19 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 0
   IsBoss: 0
+--- !u!114 &1224624026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224624023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1 &1269768008
 GameObject:
   m_ObjectHideFlags: 0
@@ -4628,6 +4876,19 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 1
   IsBoss: 0
+--- !u!114 &1319872770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319872763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1001 &1352842085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4937,7 +5198,7 @@ Transform:
   m_Children:
   - {fileID: 1884020708}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1478311712
 GameObject:
@@ -5030,7 +5291,7 @@ Transform:
   m_Children:
   - {fileID: 298760211}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1517336346
 GameObject:
@@ -5125,7 +5386,7 @@ Transform:
   m_Children:
   - {fileID: 2930358279483714149}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1517336351
 MonoBehaviour:
@@ -5449,7 +5710,7 @@ Transform:
   m_Children:
   - {fileID: 223413654}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1676184725
 GameObject:
@@ -5688,7 +5949,7 @@ Transform:
   m_Children:
   - {fileID: 416786789}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1776970320
 GameObject:
@@ -5781,7 +6042,7 @@ Transform:
   m_Children:
   - {fileID: 1968566364}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1788799034
 PrefabInstance:
@@ -5945,7 +6206,7 @@ Transform:
   m_Children:
   - {fileID: 1036451192}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1797276594
 MonoBehaviour:
@@ -6155,7 +6416,7 @@ Transform:
   m_Children:
   - {fileID: 239195981}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1844734656
 GameObject:
@@ -6303,7 +6564,7 @@ PrefabInstance:
     - target: {fileID: 1691041912051629585, guid: 2927caf97cc7f444fb48d8f019f0cfdc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1691041912051629585, guid: 2927caf97cc7f444fb48d8f019f0cfdc,
         type: 3}
@@ -6526,6 +6787,19 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 1
   IsBoss: 0
+--- !u!114 &1884020716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884020709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1 &1887736973 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3802032456776879575, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
@@ -6554,6 +6828,19 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 0
   IsBoss: 0
+--- !u!114 &1887736976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887736973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1001 &1922252909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6700,6 +6987,19 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 0
   IsBoss: 0
+--- !u!114 &1945305098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945305095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1001 &1968566363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6879,6 +7179,19 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 1
   IsBoss: 0
+--- !u!114 &1968566372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968566365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1 &2003980851
 GameObject:
   m_ObjectHideFlags: 0
@@ -6972,7 +7285,7 @@ Transform:
   m_Children:
   - {fileID: 55104231}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2003980856
 MonoBehaviour:
@@ -7196,6 +7509,19 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 1
   IsBoss: 0
+--- !u!114 &2015395663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015395656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429e2a0d1e9f7f146ada9fccbce35813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameObject: {fileID: 218622343}
 --- !u!1 &2031299984
 GameObject:
   m_ObjectHideFlags: 0
@@ -7374,7 +7700,7 @@ Transform:
   m_Children:
   - {fileID: 280928465}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2045459008
 GameObject:
@@ -7467,7 +7793,7 @@ Transform:
   m_Children:
   - {fileID: 1319872762}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2049021172
 GameObject:
@@ -7560,7 +7886,7 @@ Transform:
   m_Children:
   - {fileID: 441506624}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2076246489
 PrefabInstance:
