@@ -219,6 +219,7 @@ public class GameController : MonoBehaviour
         {
             PlayerPrefs.SetFloat("PlayerXPos", -4);
             PlayerPrefs.SetFloat("PlayerZPos", 4);
+            PlayerPrefs.SetInt("IsBoss", 0);
         }
         else if (PlayerPrefs.GetInt("IsBoss", 0) == 0)
         {
