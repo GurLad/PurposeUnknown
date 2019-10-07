@@ -708,6 +708,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: Attacks.Array.size
@@ -747,10 +751,6 @@ PrefabInstance:
         type: 3}
       propertyPath: Attacks.Array.data[1]
       value: Laser gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
@@ -1029,13 +1029,51 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.64
       objectReference: {fileID: 0}
+    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.399383
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 15.940001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1.9449872
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 5.7465713e-11
+      objectReference: {fileID: 0}
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Name
-      value: Teo
+      value: Theo
       objectReference: {fileID: 0}
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Health
@@ -1064,44 +1102,6 @@ PrefabInstance:
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.data[1]
       value: Pulse
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 5.399383
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 15.940001
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 1.9449872
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 5.7465713e-11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
@@ -1145,6 +1145,7 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 1
   IsBoss: 0
+  ID: 
 --- !u!114 &238210446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1198,6 +1199,7 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 1
   IsBoss: 0
+  ID: 
 --- !u!114 &259344243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1389,6 +1391,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: Attacks.Array.size
@@ -1428,10 +1434,6 @@ PrefabInstance:
         type: 3}
       propertyPath: Attacks.Array.data[1]
       value: Pulse
-      objectReference: {fileID: 0}
-    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
@@ -1481,6 +1483,7 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 0
   IsBoss: 0
+  ID: 
 --- !u!114 &280928470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1614,7 +1617,7 @@ BoxCollider:
   m_GameObject: {fileID: 300791425}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1751,6 +1754,44 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.64
       objectReference: {fileID: 0}
+    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.399383
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 15.940001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1.9449872
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 5.7465713e-11
+      objectReference: {fileID: 0}
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.size
       value: 2
@@ -1786,44 +1827,6 @@ PrefabInstance:
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.data[1]
       value: Laser gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 5.399383
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 15.940001
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 1.9449872
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 5.7465713e-11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
@@ -1867,6 +1870,7 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 1
   IsBoss: 0
+  ID: 
 --- !u!114 &359625856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2031,6 +2035,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: Attacks.Array.size
@@ -2070,10 +2078,6 @@ PrefabInstance:
         type: 3}
       propertyPath: Attacks.Array.data[1]
       value: Pulse
-      objectReference: {fileID: 0}
-    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
@@ -2123,6 +2127,7 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 0
   IsBoss: 0
+  ID: 
 --- !u!114 &416786794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2203,6 +2208,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: Attacks.Array.size
@@ -2237,10 +2246,6 @@ PrefabInstance:
         type: 3}
       propertyPath: Attacks.Array.data[0]
       value: Zap
-      objectReference: {fileID: 0}
-    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
@@ -2290,6 +2295,7 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 0
   IsBoss: 0
+  ID: 
 --- !u!114 &441506629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2370,6 +2376,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: Attacks.Array.size
@@ -2414,10 +2424,6 @@ PrefabInstance:
         type: 3}
       propertyPath: Attacks.Array.data[2]
       value: Fireball
-      objectReference: {fileID: 0}
-    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
@@ -2467,6 +2473,7 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 0
   IsBoss: 0
+  ID: 
 --- !u!114 &471205632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2815,6 +2822,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: Attacks.Array.size
@@ -2849,10 +2860,6 @@ PrefabInstance:
         type: 3}
       propertyPath: Attacks.Array.data[0]
       value: Fireball
-      objectReference: {fileID: 0}
-    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
@@ -2890,6 +2897,7 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 0
   IsBoss: 0
+  ID: 
 --- !u!114 &671909109 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
@@ -3261,27 +3269,60 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.64
       objectReference: {fileID: 0}
-    - target: {fileID: 4218210141356769370, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 74f59bea2298aab4d99b10d38e78878d, type: 2}
-    - target: {fileID: 6245348171905043421, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 74f59bea2298aab4d99b10d38e78878d, type: 2}
+    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3200198451399211956, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 74f59bea2298aab4d99b10d38e78878d, type: 2}
-    - target: {fileID: 4508677339183513058, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245348171905043421, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 74f59bea2298aab4d99b10d38e78878d, type: 2}
-    - target: {fileID: 333664816492246894, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+    - target: {fileID: 4218210141356769370, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 74f59bea2298aab4d99b10d38e78878d, type: 2}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.399383
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 15.940001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1.9449872
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 5.7465713e-11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508677339183513058, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3291,17 +3332,7 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 74f59bea2298aab4d99b10d38e78878d, type: 2}
-    - target: {fileID: 1957639996663975051, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 74f59bea2298aab4d99b10d38e78878d, type: 2}
     - target: {fileID: 1957639996112880893, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 74f59bea2298aab4d99b10d38e78878d, type: 2}
-    - target: {fileID: 1957639995647578164, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3346,44 +3377,21 @@ PrefabInstance:
       propertyPath: Attacks.Array.data[2]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+    - target: {fileID: 1957639995647578164, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
         type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 74f59bea2298aab4d99b10d38e78878d, type: 2}
+    - target: {fileID: 1957639996663975051, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
         type: 3}
-      propertyPath: m_Size.y
-      value: 5.399383
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 74f59bea2298aab4d99b10d38e78878d, type: 2}
+    - target: {fileID: 333664816492246894, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
         type: 3}
-      propertyPath: m_Size.z
-      value: 15.940001
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 1.9449872
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 5.7465713e-11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 74f59bea2298aab4d99b10d38e78878d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
 --- !u!4 &829417950 stripped
@@ -3426,6 +3434,7 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 1
   IsBoss: 1
+  ID: 
 --- !u!114 &829417958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3758,6 +3767,44 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.64
       objectReference: {fileID: 0}
+    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.399383
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 15.940001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1.9449872
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 5.7465713e-11
+      objectReference: {fileID: 0}
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.size
       value: 2
@@ -3793,44 +3840,6 @@ PrefabInstance:
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.data[1]
       value: Pulse
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 5.399383
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 15.940001
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 1.9449872
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 5.7465713e-11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
@@ -3874,6 +3883,7 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 1
   IsBoss: 0
+  ID: 
 --- !u!114 &946530164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4272,6 +4282,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8423240405298327918, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92b163c68bcc6114eaaf3cb8cccf28b0, type: 2}
+    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: Attacks.Array.size
@@ -4321,15 +4340,6 @@ PrefabInstance:
         type: 3}
       propertyPath: Attacks.Array.data[3]
       value: Mega laser
-      objectReference: {fileID: 0}
-    - target: {fileID: 8423240405298327918, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 92b163c68bcc6114eaaf3cb8cccf28b0, type: 2}
-    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6314097914555685099, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
@@ -4419,6 +4429,7 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 0
   IsBoss: 1
+  ID: 
 --- !u!114 &1193779817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4499,6 +4510,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: Attacks.Array.size
@@ -4538,10 +4553,6 @@ PrefabInstance:
         type: 3}
       propertyPath: Attacks.Array.data[1]
       value: Laser gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
@@ -4591,6 +4602,7 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 0
   IsBoss: 0
+  ID: 
 --- !u!114 &1224624026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4756,6 +4768,44 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.64
       objectReference: {fileID: 0}
+    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.399383
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 15.940001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1.9449872
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 5.7465713e-11
+      objectReference: {fileID: 0}
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.size
       value: 3
@@ -4795,44 +4845,6 @@ PrefabInstance:
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.data[2]
       value: Fire blast
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 5.399383
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 15.940001
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 1.9449872
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 5.7465713e-11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
@@ -4876,6 +4888,7 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 1
   IsBoss: 0
+  ID: 
 --- !u!114 &1319872770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5647,7 +5660,7 @@ BoxCollider:
   m_GameObject: {fileID: 1619000960}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5658,7 +5671,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619000960}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6671,6 +6684,44 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.64
       objectReference: {fileID: 0}
+    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.399383
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 15.940001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1.9449872
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 5.7465713e-11
+      objectReference: {fileID: 0}
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.size
       value: 1
@@ -6706,44 +6757,6 @@ PrefabInstance:
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.data[1]
       value: Laser pistol
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 5.399383
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 15.940001
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 1.9449872
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 5.7465713e-11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
@@ -6787,6 +6800,7 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 1
   IsBoss: 0
+  ID: 
 --- !u!114 &1884020716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6828,6 +6842,7 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 0
   IsBoss: 0
+  ID: 
 --- !u!114 &1887736976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6913,6 +6928,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: Attacks.Array.size
@@ -6953,10 +6972,6 @@ PrefabInstance:
       propertyPath: Attacks.Array.data[1]
       value: Pulse
       objectReference: {fileID: 0}
-    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
 --- !u!1 &1945305095 stripped
@@ -6987,6 +7002,7 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 0
   IsBoss: 0
+  ID: 
 --- !u!114 &1945305098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7072,6 +7088,35 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.64
       objectReference: {fileID: 0}
+    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.399383
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 15.940001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1.9449872
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 5.7465713e-11
+      objectReference: {fileID: 0}
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.size
       value: 1
@@ -7107,35 +7152,6 @@ PrefabInstance:
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.data[1]
       value: Laser gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 5.399383
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 15.940001
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 1.9449872
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 5.7465713e-11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
@@ -7179,6 +7195,7 @@ MonoBehaviour:
   WeaponName: HeadGun
   IsHuman: 1
   IsBoss: 0
+  ID: 
 --- !u!114 &1968566372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7389,13 +7406,51 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.64
       objectReference: {fileID: 0}
+    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.399383
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 15.940001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1.9449872
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 5.7465713e-11
+      objectReference: {fileID: 0}
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Name
-      value: Reno
+      value: Chuck
       objectReference: {fileID: 0}
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Health
@@ -7428,44 +7483,6 @@ PrefabInstance:
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.data[2]
       value: Fire blast
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 5.399383
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 15.940001
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 1.9449872
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 5.7465713e-11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
@@ -7509,6 +7526,7 @@ MonoBehaviour:
   WeaponName: Zapper
   IsHuman: 1
   IsBoss: 0
+  ID: 
 --- !u!114 &2015395663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7637,7 +7655,7 @@ BoxCollider:
   m_GameObject: {fileID: 2033601529}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7648,7 +7666,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033601529}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7823,7 +7841,7 @@ BoxCollider:
   m_GameObject: {fileID: 2049021172}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7960,6 +7978,44 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.64
       objectReference: {fileID: 0}
+    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.399383
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 15.940001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1.9449872
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 5.7465713e-11
+      objectReference: {fileID: 0}
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.size
       value: 2
@@ -7995,44 +8051,6 @@ PrefabInstance:
     - target: {fileID: 699344272, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
       propertyPath: Attacks.Array.data[1]
       value: Fireball
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 5.399383
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 15.940001
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 1.9449872
-      objectReference: {fileID: 0}
-    - target: {fileID: 9039995238784129304, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 5.7465713e-11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843173692, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582176586, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7415293270529057087, guid: 772ffb061eef0f14fb69dfcb21bcd16c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 772ffb061eef0f14fb69dfcb21bcd16c, type: 3}

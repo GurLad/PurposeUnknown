@@ -2507,6 +2507,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
 --- !u!4 &1635031491 stripped
@@ -2587,7 +2591,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Made in 48 hours for Ludum Dare 45
 
-    By Gur Ladizhinsky'
+    By Gur Ladizhinsky (V. 1.0.1)'
 --- !u!222 &1645884218
 CanvasRenderer:
   m_ObjectHideFlags: 0
