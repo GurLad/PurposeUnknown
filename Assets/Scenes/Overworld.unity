@@ -1408,12 +1408,12 @@ PrefabInstance:
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: MaxHealth
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: MaxEnergy
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
@@ -2047,27 +2047,27 @@ PrefabInstance:
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: Name
-      value: Z72
+      value: Z62
       objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: MaxHealth
-      value: 16
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: MaxEnergy
-      value: 16
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: Power
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: Defense
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
@@ -2225,12 +2225,12 @@ PrefabInstance:
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: MaxHealth
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: MaxEnergy
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
@@ -4282,15 +4282,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8423240405298327918, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 92b163c68bcc6114eaaf3cb8cccf28b0, type: 2}
-    - target: {fileID: 909212364, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: Attacks.Array.size
@@ -4299,7 +4299,7 @@ PrefabInstance:
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}
       propertyPath: Name
-      value: X99
+      value: A255
       objectReference: {fileID: 0}
     - target: {fileID: 1610013900168955271, guid: 39cb6dbf8a8f3c9448ef1c252d375cd4,
         type: 3}

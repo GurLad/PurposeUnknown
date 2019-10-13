@@ -2591,7 +2591,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Made in 48 hours for Ludum Dare 45
 
-    By Gur Ladizhinsky (V. 1.0.1)'
+    By Gur Ladizhinsky (V. 1.0.2)'
 --- !u!222 &1645884218
 CanvasRenderer:
   m_ObjectHideFlags: 0
